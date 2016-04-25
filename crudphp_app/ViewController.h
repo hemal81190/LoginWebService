@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NSURLConnectionDelegate>
+{
+    NSMutableData *datamute;
+}
+@property (weak, nonatomic) IBOutlet UITextField *txt_phone;
+@property (weak, nonatomic) IBOutlet UITextField *txt_email;
+@property (weak, nonatomic) IBOutlet UITextField *txt_address;
 
-
+@property (weak, nonatomic) IBOutlet UITextField *txt_unm;
+@property (weak, nonatomic) IBOutlet UITextField *txt_upass;
+- (IBAction)btn_go_action:(id)sender;
 @end
 

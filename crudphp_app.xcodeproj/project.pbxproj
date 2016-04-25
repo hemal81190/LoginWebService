@@ -14,6 +14,8 @@
 		A73E67C41CCAD9E10029360F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73E67C31CCAD9E10029360F /* Images.xcassets */; };
 		A73E67C71CCAD9E10029360F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A73E67C51CCAD9E10029360F /* LaunchScreen.xib */; };
 		A73E67D31CCAD9E20029360F /* crudphp_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A73E67D21CCAD9E20029360F /* crudphp_appTests.m */; };
+		A73E67DE1CCAE2880029360F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73E67DD1CCAE2880029360F /* LoginViewController.m */; };
+		E7DD49221CCE8C3E00DE9EB1 /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD49211CCE8C3E00DE9EB1 /* myTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		A73E67CC1CCAD9E20029360F /* crudphp_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crudphp_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73E67D11CCAD9E20029360F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A73E67D21CCAD9E20029360F /* crudphp_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = crudphp_appTests.m; sourceTree = "<group>"; };
+		A73E67DC1CCAE2880029360F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A73E67DD1CCAE2880029360F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E7DD49201CCE8C3E00DE9EB1 /* myTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewController.h; sourceTree = "<group>"; };
+		E7DD49211CCE8C3E00DE9EB1 /* myTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 		A73E67AA1CCAD9E10029360F = {
 			isa = PBXGroup;
 			children = (
+				E7DD49201CCE8C3E00DE9EB1 /* myTableViewController.h */,
+				E7DD49211CCE8C3E00DE9EB1 /* myTableViewController.m */,
+				A73E67DC1CCAE2880029360F /* LoginViewController.h */,
+				A73E67DD1CCAE2880029360F /* LoginViewController.m */,
 				A73E67B51CCAD9E10029360F /* crudphp_app */,
 				A73E67CF1CCAD9E20029360F /* crudphp_appTests */,
 				A73E67B41CCAD9E10029360F /* Products */,
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73E67DE1CCAE2880029360F /* LoginViewController.m in Sources */,
 				A73E67BF1CCAD9E10029360F /* ViewController.m in Sources */,
 				A73E67BC1CCAD9E10029360F /* AppDelegate.m in Sources */,
 				A73E67B91CCAD9E10029360F /* main.m in Sources */,
+				E7DD49221CCE8C3E00DE9EB1 /* myTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = crudphp_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = crudphp_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -366,7 +380,6 @@
 		A73E67DA1CCAD9E20029360F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -376,6 +389,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = crudphp_appTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crudphp_app.app/crudphp_app";
@@ -385,12 +399,12 @@
 		A73E67DB1CCAD9E20029360F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = crudphp_appTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crudphp_app.app/crudphp_app";
@@ -416,6 +430,7 @@
 				A73E67D81CCAD9E20029360F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A73E67D91CCAD9E20029360F /* Build configuration list for PBXNativeTarget "crudphp_appTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +439,7 @@
 				A73E67DB1CCAD9E20029360F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
